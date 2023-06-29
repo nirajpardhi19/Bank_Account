@@ -1,0 +1,81 @@
+Create HTML, CSS, and JavaScript code for a banking web page that displays 
+the following options when the user is not logged in: SignUp, SignIn, AboutUs, and ContactUs.
+ Once the user logs in, they will see a navigation bar with the transaction page, account page, 
+ username of the logged-in user, and the time and date displayed in the nav with updating date time.
+  The transaction page will display transactions based on credit, debit, and closing balance. 
+  The account page will display profile and account details, such as first name, last name, username, 
+  account number, opening date, customer ID, account type, status, IFSC, date of birth, password, 
+  phone number, and transaction history. The transaction history will include the serial number, 
+  date and time, description, debit amount, credit amount, and balance. An example of the account 
+  details JSON data is as follows:
+ 
+ {
+    "firstName": "Emma",
+    "lastName": "Williams",
+    "userName": "Emma",
+    "accountNumber": 1678336952990,
+    "openDate": 1678336952990,
+    "customerId": 882243,
+    "accountType": "Savings",
+    "status": "Active",
+    "ifsc": "BLUE0000042",
+    "dob": "2000-09-22",
+    "password": "password456",
+    "phoneNumber": "9997773056",
+    "transactions": [
+    {
+    "serialNo": 1,
+    "dateTime": "2023-03-01 10:00:00",
+    "description": "Initial Deposit",
+    "debit": "",
+    "credit": 5000,
+    "balance": 5000
+    },
+    {
+    "serialNo": 2,
+    "dateTime": "2023-03-03 14:30:00",
+    "description": "Grocery Shopping",
+    "debit": 1000,
+    "credit": "",
+    "balance": 4000
+    },
+    {
+    "serialNo": 3,
+    "dateTime": "2023-03-05 12:15:00",
+    "description": "Salary Credit",
+    "debit": "",
+    "credit": 10000,
+    "balance": 14000
+    }
+    ]
+    }
+
+
+    <header>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+    header{
+      background:;
+      color:#444;
+      padding-top:30px;
+      height: 80px;
+      display: flex;
+     
+      margin-top: fixed;
+    }
+    
+    header a{
+      color:#444;
+      text-decoration:none;
+      text-transform: uppercase;
+      font-size:16px;
+    }
+    
+    header li{
+      display:inline;
+      padding: 0 20px 0 20px;
+    }
